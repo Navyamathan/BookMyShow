@@ -10,7 +10,7 @@ public class Show
     private LocalDate date; // stores the show date
     private LocalTime startingTime; // stores the show starting time
     private LocalTime endingTime; // stores the show ending time
-    private String screenName;
+    private String screenName; // stores the screen name 
     private HashMap<Character, ArrayList<String>> seatsGrid; // creating a hashmap to store the seats arrangements in a show
     private long price; // stores the price of the show
 
