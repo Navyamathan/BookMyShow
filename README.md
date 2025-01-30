@@ -72,15 +72,15 @@ File Handling (For storing user and booking data, if applicable)
 🔧 How to Run the Project
 
 Clone the Repository
-
+```bash
 git clone https://github.com/yourusername/BookMyShow.git
-
+```
 Compile & Run
-
+```bash
 cd BookMyShow/src
 javac Helper.java
 java Helper
-
+```
 Author: Your Name | Your Contact Info
 
 Enjoy Coding! 🚀
