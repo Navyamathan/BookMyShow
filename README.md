@@ -45,7 +45,7 @@ Tickets.java - Stores booking details for users.
 Utilities.java - Helper functions (seat allocation, pricing calculations).
 
 📂 Folder Structure
-
+```
 BookMyShow/
 │── src/
 │   ├── Helper.java
@@ -58,7 +58,7 @@ BookMyShow/
 │   ├── Tickets.java
 │   ├── Utilities.java
 │── README.md
-
+```
 🏗️ Technologies Used
 
 Java (Core OOP concepts)
