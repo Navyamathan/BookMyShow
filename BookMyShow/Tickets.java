@@ -9,7 +9,7 @@ public class Tickets
     private String location; // stores the theatre location
     private String screenName; // store the screen name
     private LocalTime startingTime; // store the show starting time
-    private ArrayList<String> bookedSeats; // store the booked seat numbers in a String array
+    private ArrayList<String> bookedSeats; // store the booked seat numbers in a array list
     private long ticketPrice; // store the price of the booked seats
 
     //  create a constructor to assign a values to the variables by passing a parameter
