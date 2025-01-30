@@ -1,87 +1,87 @@
-BookMyShow - Movie Ticket Booking System
-
-📌 Project Overview
-
-BookMyShow is a Java-based movie ticket booking system that allows users to book movie tickets online. The system supports admin and customer functionalities, including managing theatres, shows, and ticket reservations.
-
+🎬 Theatre Ticket Booking System
+Overview
+A Java-based ticket booking system that provides a robust platform for managing theatre bookings, customer accounts, and show schedules. The system offers a streamlined interface for both administrators and customers, enabling efficient ticket reservations and theatre management.
 🚀 Features
+For Customers
 
-🎭 Admin Functionalities
+Account creation and management
+Browse available shows and schedules
+Real-time seat selection and booking
+View booking history and tickets
+Secure authentication system
 
-Add & Manage Shows: Admins can add movie shows with details like date, time, location, and price.
+For Administrators
 
-Manage Screens & Theatres: Admins can define theatre and screen configurations.
+Show management and scheduling
+Theatre and screen configuration
+Seat allocation control
+User management system
+View and manage bookings
 
-🎟️ Customer Functionalities
+🏗️ Architecture
+The system follows a modular architecture with the following key components:
+Core Components
 
-User Registration & Login: Customers can create accounts and log in.
+Helper: Application entry point
+BookMyShowActions: Main controller for application workflow
+AdminActions: Handles all administrator operations
+CustomerActions: Manages customer interactions and bookings
 
-Browse & Select Movies: Users can view available movies and shows.
+Entity Classes
 
-Book Tickets: Customers can select seats and book tickets.
+Show: Manages show details including date, time, and pricing
+Screen: Handles screen and seat management
+Theatre: Controls theatre configuration and screen assignments
+Tickets: Manages ticket generation and booking records
 
-View Booking History: Users can check their booked tickets.
+Utility Components
 
-🛠️ System Architecture
+Utilities: Provides helper functions for common operations
 
-The system follows an object-oriented approach, with key classes handling different functionalities:
+💻 Technical Stack
 
-Helper.java - Entry point (main()).
+Language: Java
+Authentication: Custom implementation
+Data Management: Java Collections Framework
+Date/Time: Java LocalDateTime API
 
-BookMyShowActions.java - Controls the application workflow (start()).
+🛠️ Setup and Installation
 
-Admin.java - Handles admin authentication.
+Clone the repository
 
-Customer.java - Manages user details and booking history.
+bashCopygit clone https://github.com/yourusername/theatre-booking-system.git
 
-Theatre.java - Represents theatres with screens and movies.
+Compile the project
 
-Show.java - Defines movie details, schedule, and pricing.
+bashCopyjavac -d bin src/*.java
 
-Screen.java - Represents theatre screens and seat availability.
+Run the application
 
-Tickets.java - Stores booking details for users.
-
-Utilities.java - Helper functions (seat allocation, pricing calculations).
-
-📂 Folder Structure
-```
-BookMyShow/
-│── src/
-│   ├── Helper.java
-│   ├── BookMyShowActions.java
-│   ├── Admin.java
-│   ├── Customer.java
-│   ├── Theatre.java
+bashCopyjava -cp bin Helper
+📂 Project Structure
+Copysrc/
+├── Helper.java
+├── BookMyShowActions.java
+├── AdminActions.java
+├── CustomerActions.java
+├── entities/
 │   ├── Show.java
 │   ├── Screen.java
-│   ├── Tickets.java
-│   ├── Utilities.java
-│── README.md
-```
-🏗️ Technologies Used
+│   ├── Theatre.java
+│   └── Tickets.java
+└── utils/
+    └── Utilities.java
+🔐 Security Features
 
-Java (Core OOP concepts)
+Secure user authentication
+Protected admin access
+Encrypted user credentials
+Session management
 
-Collections Framework (ArrayLists, HashMaps)
-
-DateTime API (Java Time Formatter)
-
-File Handling (For storing user and booking data, if applicable)
-
-🔧 How to Run the Project
-
-Clone the Repository
-```bash
-git clone https://github.com/yourusername/BookMyShow.git
-```
-Compile & Run
-```bash
-cd BookMyShow/src
-javac Helper.java
-java Helper
-```
-Author: Your Name | Your Contact Info
-
-Enjoy Coding! 🚀
-
+🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+📝 License
+[Your chosen license]
+👥 Contact
+[Your Name]
+[Your Email/Contact Information]
