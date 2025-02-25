@@ -386,6 +386,7 @@ class AdminActions
         {
             if(!movieFound)
             {
+                System.out.println();
                 System.out.println("...The Details Of Movies...");
                 movieFound=true;
             }
