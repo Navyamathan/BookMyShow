@@ -78,18 +78,15 @@ class CustomerActions
     //this function manage the log in process
     public static Customer signUp()
     {
-        String userName;
-        String password;
-        String location;
         System.out.println();
         System.out.println("To Sign Up Enter The Following Details...");
         System.out.println();
         System.out.print("Enter User Name: ");
-        userName = BookMyShowActions.s.nextLine(); // get the userName
+        String userName = BookMyShowActions.s.nextLine(); // get the userName
         System.out.print("Enter Password: ");
-        password = BookMyShowActions.s.nextLine(); // get the password
+        String password = BookMyShowActions.s.nextLine(); // get the password
         System.out.print("Enter Location: ");
-        location = BookMyShowActions.s.nextLine(); // get the customer location
+        String location = BookMyShowActions.s.nextLine(); // get the customer location
         // after get all the customer, create a BookMyShow.Customer object type variable and store customer details in it
         Customer temp = new Customer(userName,password,location);
         BookMyShow.getCustomerArrayList().add(temp); // add temp into BookMyShow.Customer ArrayList
