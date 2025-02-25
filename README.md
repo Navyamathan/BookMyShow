@@ -74,7 +74,7 @@ java MainClass
 
 ## 🖥 Class Diagram
 
-![BookMyShow Architecture](.png)
+![BookMyShow Architecture](https://github.com/Navyamathan/BookMyShow/blob/main/BookMyShow/BookMyShow.png)
 
 ---
 
