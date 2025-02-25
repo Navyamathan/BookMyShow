@@ -1,65 +1,71 @@
-🎬 Theatre Ticket Booking System
-Overview
-A Java-based ticket booking system that provides a robust platform for managing theatre bookings, customer accounts, and show schedules. The system offers a streamlined interface for both administrators and customers, enabling efficient ticket reservations and theatre management.
-🚀 Features
-For Customers
+![BookMyShow](https://github.com/user-attachments/assets/fc0f6583-58ae-414d-bd74-6533b4256529)
+# 🎬 BookMyShow - Theatre Ticket Booking System
 
-Account creation and management
-Browse available shows and schedules
-Real-time seat selection and booking
-View booking history and tickets
-Secure authentication system
+## 📌 Overview
+BookMyShow is a Java-based theatre ticket booking system that provides a user-friendly platform for managing bookings, customer accounts, and show schedules. The system enables smooth and efficient ticket reservations with a well-structured modular architecture.
 
-For Administrators
+## 🚀 Features
 
-Show management and scheduling
-Theatre and screen configuration
-Seat allocation control
-User management system
-View and manage bookings
+### 🎭 For Customers
+- **User Registration & Login**
+- **Browse & Book Shows**: View available movies and schedules
+- **Real-time Seat Selection**
+- **Booking History Management**
+- **Secure Authentication**
 
-🏗️ Architecture
-The system follows a modular architecture with the following key components:
-Core Components
+### 🎟️ For Administrators
+- **Manage Shows & Scheduling**
+- **Configure Theatres & Screens**
+- **Control Seat Allocations**
+- **User Account Management**
+- **Monitor and Manage Bookings**
 
-Helper: Application entry point
-BookMyShowActions: Main controller for application workflow
-AdminActions: Handles all administrator operations
-CustomerActions: Manages customer interactions and bookings
+## 🛠️ System Architecture
+BookMyShow follows a modular architecture with key components:
 
-Entity Classes
+### 🔑 Core Components
+- **Helper.java**: Application entry point
+- **BookMyShowActions.java**: Central controller handling workflows
+- **AdminActions.java**: Manages administrator operations
+- **CustomerActions.java**: Handles customer interactions and bookings
 
-Show: Manages show details including date, time, and pricing
-Screen: Handles screen and seat management
-Theatre: Controls theatre configuration and screen assignments
-Tickets: Manages ticket generation and booking records
+### 🎬 Entity Classes
+- **Show.java**: Stores show details (date, time, pricing, seating)
+- **Screen.java**: Manages individual screens and seat layouts
+- **Theatre.java**: Configures theatres and assigns screens
+- **Tickets.java**: Handles ticket generation and records bookings
+- **Customer.java**: Maintains customer profiles and booking history
+- **Admin.java**: Secures administrator access
 
-Utility Components
+### 🔧 Utility Components
+- **Utilities.java**: Provides helper functions like seat allocation
 
-Utilities: Provides helper functions for common operations
+## 💻 Technical Stack
+- **Language**: Java
+- **Authentication**: Custom user authentication
+- **Data Management**: Java Collections Framework
+- **Date & Time Handling**: Java LocalDateTime API
 
-💻 Technical Stack
+## 🛠️ Setup and Installation
 
-Language: Java
-Authentication: Custom implementation
-Data Management: Java Collections Framework
-Date/Time: Java LocalDateTime API
+### Clone the Repository
+```bash
+git clone https://github.com/yourusername/bookmyshow.git
+```
 
-🛠️ Setup and Installation
+### Compile the Project
+```bash
+javac -d bin src/*.java
+```
 
-Clone the repository
+### Run the Application
+```bash
+java -cp bin Helper
+```
 
-bashCopygit clone https://github.com/yourusername/theatre-booking-system.git
-
-Compile the project
-
-bashCopyjavac -d bin src/*.java
-
-Run the application
-
-bashCopyjava -cp bin Helper
-📂 Project Structure
-Copysrc/
+## 👤 Project Structure
+```
+src/
 ├── Helper.java
 ├── BookMyShowActions.java
 ├── AdminActions.java
@@ -68,20 +74,27 @@ Copysrc/
 │   ├── Show.java
 │   ├── Screen.java
 │   ├── Theatre.java
-│   └── Tickets.java
+│   ├── Tickets.java
+│   ├── Customer.java
+│   ├── Admin.java
 └── utils/
     └── Utilities.java
-🔐 Security Features
+```
 
-Secure user authentication
-Protected admin access
-Encrypted user credentials
-Session management
+## 🔐 Security Features
+- **Encrypted User Credentials**
+- **Secure Admin Access Control**
+- **Session Management**
 
-🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-📝 License
-[Your chosen license]
-👥 Contact
-[Your Name]
-[Your Email/Contact Information]
+## 📊 Future Enhancements
+- **Integration with Payment Gateways**
+- **Movie Ratings & Reviews**
+- **Mobile App Support**
+- **AI-based Seat Recommendation**
+
+## 🤝 Contributing
+Contributions are welcome! Feel free to fork the repo and submit a Pull Request.
+
+## 👥 Contact
+Navya M V 
+navyamathan@gmail.com
