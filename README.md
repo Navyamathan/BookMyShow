@@ -6,7 +6,7 @@ BookMyShow is a Java-based theatre ticket booking system that provides a user-fr
 ## 🛠️ System Architecture
 BookMyShow follows a modular architecture with key components:
 
-![System Architecture]([https://github.com/Navyamathan/BookMyShow/blob/main/BookMyShow/BookMyShow.png])
+![System Architecture](https://github.com/Navyamathan/BookMyShow/blob/main/BookMyShow/BookMyShow.png)
 
 ### 🔑 Core Components
 - **Helper.java**: Application entry point
