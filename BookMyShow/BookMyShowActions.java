@@ -11,7 +11,9 @@ class BookMyShowActions
     public static void start()
     {
         System.out.println();
+        System.out.println("======================");
         System.out.println(".....BOOK MY SHOW.....");
+        System.out.println("======================");
 
         while (true)
         {
