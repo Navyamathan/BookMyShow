@@ -538,9 +538,9 @@ class CustomerActions
     // method to print the ticket booking details
     public static void viewTicket(Customer currentCustomer)
     {
-        System.out.println();
         for(Tickets tempTicket : currentCustomer.getTicketList()) // loop to get the currentCustomers ticket ArrayList one by one
         {
+            System.out.println();
             System.out.println("BookMyShow.Theatre: "+tempTicket.getTheatreName());
             System.out.println("BookMyShow.Movie: "+tempTicket.getMovieName());
             System.out.println("Location: "+tempTicket.getLocation());
