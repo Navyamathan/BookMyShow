@@ -212,15 +212,6 @@ class AdminActions
     // method to get movies details and store it into the movie HashMap
     public static void addMovie()
     {
-        Screen screen = null;
-        Theatre theatre = null;
-        Show show;
-        HashMap<Character,ArrayList<String>> showSeatsGrid = null;
-        String location;
-        LocalDate localDate;
-        String theatreName;
-        String screenName;
-        boolean theatreFound = false;
         System.out.println();
         System.out.println("Enter the Following Details to Add BookMyShow.Movie...");
         System.out.println();
@@ -228,13 +219,15 @@ class AdminActions
         String movieName = BookMyShowActions.s.nextLine(); // get the movie name
         System.out.print("Enter The Date( dd_MM_yyyy ): ");
         String date = BookMyShowActions.s.nextLine(); // get the movie date
-        localDate = LocalDate.parse(date, BookMyShow.getLocalDateFormatter());
+        LocalDate localDate = LocalDate.parse(date, BookMyShow.getLocalDateFormatter());
         System.out.print("Enter The Duration( HH:mm ): ");
         String duration = BookMyShowActions.s.nextLine(); // get the duration of the movie
         LocalTime localTime = LocalTime.parse(duration, BookMyShow.getLocalTimeFormatter());
         System.out.print("Enter the Price: ");
         long price = Long.parseLong(BookMyShowActions.s.nextLine()); // get the movie price
 
+        String location;
+        boolean theatreFound = false;
         while(true) // while loop will break when the theatreFound is true
         {
             System.out.print("Enter The Location: ");
@@ -262,10 +255,11 @@ class AdminActions
             }
         }
 
+        Theatre theatre = null;
         while(true) // loop runs until the theatre are found
         {
             System.out.print("Enter The Name Of The BookMyShow.Theatre You Want To Add: ");
-            theatreName = BookMyShowActions.s.nextLine(); // get the theatre which is user want in the printed available theatre
+            String theatreName = BookMyShowActions.s.nextLine(); // get the theatre which is user want in the printed available theatre
             if (BookMyShow.getTheatreHashMap().containsKey(theatreName)) // check the theatre name is in the theatre HashMap
             {
                 System.out.println("Available Screens... ");
@@ -285,6 +279,9 @@ class AdminActions
             }
         }
 
+        Screen screen = null;
+        String screenName;
+        HashMap<Character,ArrayList<String>> showSeatsGrid = null;
         while(true) // loop runs until the screen are found
         {
             System.out.print("Enter The Name Of The BookMyShow.Screen You Want To Add: ");
@@ -306,6 +303,7 @@ class AdminActions
             }
         }
 
+        Show show;
         while(true) // loop runs util the given show data is not already exist
         {
             boolean sameScreenFlag = false;
