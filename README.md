@@ -1,102 +1,111 @@
-# 🎬 BookMyShow - Theatre Ticket Booking System
+# BookMyShow - Movie Ticket Booking System
 
-## 📌 Overview
-BookMyShow is a Java-based theatre ticket booking system that provides a user-friendly platform for managing bookings, customer accounts, and show schedules. The system enables smooth and efficient ticket reservations with a well-structured modular architecture.
+A **Java-based console application** that simulates an efficient and user-friendly movie ticket booking system. This project allows **admins** to manage theatres, screens, and movie schedules, while **users** can register, browse movies, book tickets, and manage preferences seamlessly.
 
-## 🛠️ System Architecture
-BookMyShow follows a modular architecture with key components:
+---
 
-![System Architecture](https://github.com/Navyamathan/BookMyShow/blob/main/BookMyShow/BookMyShow.png)
+## 📌 Features
 
-### 🔑 Core Components
-- **Helper.java**: Application entry point
-- **BookMyShowActions.java**: Central controller handling workflows
-- **AdminActions.java**: Manages administrator operations
-- **CustomerActions.java**: Handles customer interactions and bookings
+### 🎭 Admin Operations
 
-### 🎬 Entity Classes
-- **Show.java**: Stores show details (date, time, pricing, seating)
-- **Screen.java**: Manages individual screens and seat layouts
-- **Theatre.java**: Configures theatres and assigns screens
-- **Tickets.java**: Handles ticket generation and records bookings
-- **Customer.java**: Maintains customer profiles and booking history
-- **Admin.java**: Secures administrator access
+Admins have full control over theatre and movie management:
 
-### 🔧 Utility Components
-- **Utilities.java**: Provides helper functions like seat allocation
+- **Admin Login** - Secure login for admin users.
+- **Manage Locations** - Add and update locations.
+- **Manage Theatres** - Configure theatres in specific locations.
+- **Manage Screens** - Set up screens in theatres.
+- **Manage Movies** - Schedule movies in theatres.
+- **View Theatres** - Retrieve theatre details.
+- **View Movies** - List currently scheduled movies.
 
-## 🚀 Features
+### 🎬 User Operations
 
-### 🎭 For Customers
-- **User Registration & Login**
-- **Browse & Book Shows**: View available movies and schedules
-- **Real-time Seat Selection**
-- **Booking History Management**
-- **Secure Authentication**
+Users can interact with the system efficiently:
 
-### 🎟️ For Administrators
-- **Manage Shows & Scheduling**
-- **Configure Theatres & Screens**
-- **Control Seat Allocations**
-- **User Account Management**
-- **Monitor and Manage Bookings**
+- **User Registration & Login** - Register a new account or log in as an existing user.
+- **Browse Movies** - View available movies and their details.
+- **Book Tickets** - Check theatre availability and book tickets.
+- **Set Preferences** - Choose preferred location and movie genres.
+- **View Tickets** - Review past and current bookings.
 
-## 💻 Technical Stack
-- **Language**: Java
-- **Authentication**: Custom user authentication
-- **Data Management**: Java Collections Framework
-- **Date & Time Handling**: Java LocalDateTime API
+---
 
-## 🛠️ Setup and Installation
+## 📂 Project Structure
 
-### Clone the Repository
-```bash
-git clone https://github.com/yourusername/bookmyshow.git
+### 🏛 Core Classes
+
+- **`MainClass`** - Entry point of the application.
+- **`AdminActions`** - Handles all admin-related functionalities.
+- **`UserActions`** - Manages user-related operations like booking and registration.
+- **`Utilities`** - Helper methods for seat generation and validations.
+
+### 📌 POJO (Plain Old Java Object) Classes
+
+- **`Theatre`** - Stores theatre details (name, location, screens, etc.).
+- **`Screen`** - Represents theatre screens with seat numbers and show mappings.
+- **`Show`** - Stores details of a movie show, including time, price, and schedule.
+- **`Tickets`** - Contains booking information such as theatre name, screen, timing, and price.
+- **`Movies`** - Represents movie details like name, duration, and associated theatres.
+
+---
+
+## 🛠 Installation & Setup
+
+### **Prerequisites**
+
+- Java Development Kit (JDK 8+)
+- Git (for cloning the repository)
+
+### **Steps to Install & Run**
+
+```sh
+# Clone the Repository
+git clone https://github.com/your-username/book-my-show.git
+cd BookMyShow
+
+# Compile the Project
+javac MainClass.java
+
+# Run the Application
+java MainClass
 ```
 
-### Compile the Project
-```bash
-javac -d bin src/*.java
-```
+---
 
-### Run the Application
-```bash
-java -cp bin Helper
-```
+## 🖥 Class Diagram
 
-## 👤 Project Structure
-```
-src/
-├── Helper.java
-├── BookMyShowActions.java
-├── AdminActions.java
-├── CustomerActions.java
-├── entities/
-│   ├── Show.java
-│   ├── Screen.java
-│   ├── Theatre.java
-│   ├── Tickets.java
-│   ├── Customer.java
-│   ├── Admin.java
-└── utils/
-    └── Utilities.java
-```
+![BookMyShow Architecture](.png)
 
-## 🔐 Security Features
-- **Encrypted User Credentials**
-- **Secure Admin Access Control**
-- **Session Management**
+---
 
-## 📊 Future Enhancements
-- **Integration with Payment Gateways**
-- **Movie Ratings & Reviews**
-- **Mobile App Support**
-- **AI-based Seat Recommendation**
+## 📊 Output Preview
 
-## 🤝 Contributing
-Contributions are welcome! Feel free to fork the repo and submit a Pull Request.
+[Click here to view sample output](https://github.com/user-attachments/assets/56212d8e-51ef-48c2-a7dd-de1126b5df30)
 
-## 👥 Contact
-For any inquiries or contributions, feel free to reach out:
-**Navya M V**  
-📧 Email: [navyamathan@gmail.com](mailto:navyamathan@gmail.com)  
+---
+
+## 🔄 How It Works
+
+### **👨‍💼 Admin Workflow:**
+
+1. Admin logs in using predefined credentials.
+2. Admin performs actions like adding locations, managing theatres, scheduling movies, and retrieving details.
+
+### **👤 User Workflow:**
+
+1. New users register an account, while existing users log in.
+2. Users browse movies, check theatre availability, and book tickets.
+3. Users can set preferences and view past bookings.
+
+---
+
+## 📞 Contact & Author
+
+**Author:** Navya M V\
+📧 Email: navyamathan@gmail.com\
+🔗 LinkedIn: [Navya M V](https://www.linkedin.com/in/navya-m-v-55515b353/)
+
+---
+
+### 🚀 Happy Coding & Enjoy Your Movie Booking Experience! 🎟️
+
