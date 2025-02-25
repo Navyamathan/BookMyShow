@@ -1,27 +1,12 @@
-![BookMyShow](https://github.com/user-attachments/assets/fc0f6583-58ae-414d-bd74-6533b4256529)
 # 🎬 BookMyShow - Theatre Ticket Booking System
 
 ## 📌 Overview
 BookMyShow is a Java-based theatre ticket booking system that provides a user-friendly platform for managing bookings, customer accounts, and show schedules. The system enables smooth and efficient ticket reservations with a well-structured modular architecture.
 
-## 🚀 Features
-
-### 🎭 For Customers
-- **User Registration & Login**
-- **Browse & Book Shows**: View available movies and schedules
-- **Real-time Seat Selection**
-- **Booking History Management**
-- **Secure Authentication**
-
-### 🎟️ For Administrators
-- **Manage Shows & Scheduling**
-- **Configure Theatres & Screens**
-- **Control Seat Allocations**
-- **User Account Management**
-- **Monitor and Manage Bookings**
-
 ## 🛠️ System Architecture
 BookMyShow follows a modular architecture with key components:
+
+![System Architecture](path/to/your/image.png)
 
 ### 🔑 Core Components
 - **Helper.java**: Application entry point
@@ -39,6 +24,22 @@ BookMyShow follows a modular architecture with key components:
 
 ### 🔧 Utility Components
 - **Utilities.java**: Provides helper functions like seat allocation
+
+## 🚀 Features
+
+### 🎭 For Customers
+- **User Registration & Login**
+- **Browse & Book Shows**: View available movies and schedules
+- **Real-time Seat Selection**
+- **Booking History Management**
+- **Secure Authentication**
+
+### 🎟️ For Administrators
+- **Manage Shows & Scheduling**
+- **Configure Theatres & Screens**
+- **Control Seat Allocations**
+- **User Account Management**
+- **Monitor and Manage Bookings**
 
 ## 💻 Technical Stack
 - **Language**: Java
@@ -96,5 +97,6 @@ src/
 Contributions are welcome! Feel free to fork the repo and submit a Pull Request.
 
 ## 👥 Contact
-Navya M V 
-navyamathan@gmail.com
+For any inquiries or contributions, feel free to reach out:
+**Navya M V**  
+📧 Email: [navyamathan@gmail.com](mailto:navyamathan@gmail.com)  
