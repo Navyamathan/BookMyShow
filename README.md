@@ -80,7 +80,11 @@ java MainClass
 
 ## 📊 Output Preview
 
-[Click here to view sample output](https://github.com/user-attachments/assets/56212d8e-51ef-48c2-a7dd-de1126b5df30)
+
+
+https://github.com/user-attachments/assets/c8d9b2b8-acd5-4da0-8c46-bbc79ff99683
+
+
 
 ---
 
